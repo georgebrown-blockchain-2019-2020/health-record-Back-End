@@ -76,7 +76,7 @@ router.post("/registerClient", async (req, res) => {
   } catch (error) {
     console.error(`Failed to register user "user2": ${error}`);
     res.json({
-      result: "fail",
+      result: "failed",
       message: `Failed to register user ${userId}: ${error}`
     });
     process.exit(1);
@@ -91,7 +91,7 @@ router.post("/registerDoctor", async (req, res) => {
   } = require("fabric-network");
   const path = require("path");
 
-  const ccpPath = path.resolve(__dirname, "config", "connection-org1.json");
+  const ccpPath = path.resolve(__dirname,"..", "config", "connection-org1.json");
   try {
     // Create a new file system based wallet for managing identities.
     const walletPath = path.join(process.cwd(), "wallet");
@@ -153,7 +153,7 @@ router.post("/registerDoctor", async (req, res) => {
   } catch (error) {
     console.error(`Failed to register user "user2": ${error}`);
     res.json({
-      result: "fail",
+      result: "failed",
       message: `Failed to register user ${userId}: ${error}`
     });
     process.exit(1);
