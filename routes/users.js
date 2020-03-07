@@ -14,7 +14,7 @@ router.post("/registerClient", async (req, res) => {
   } = require("fabric-network");
   const path = require("path");
 
-  const ccpPath = path.resolve(__dirname, "config", "connection-org1.json");
+  const ccpPath = path.resolve(__dirname,"..","config", "connection-org1.json");
   try {
     // Create a new file system based wallet for managing identities.
     const walletPath = path.join(process.cwd(), "wallet");
