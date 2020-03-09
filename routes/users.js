@@ -53,7 +53,7 @@ router.post("/registerClient", async (req, res) => {
 
     // Register the user, enroll the user, and import the new identity into the wallet.
     const secret = await ca.register(
-      { affiliation: "org1.department1", enrollmentID: userId, role: "client" },
+      { affiliation: "org1.department1", enrollmentID: userId, role: "client",attrs:[{name:'role',value:'client',ecert: true}] },
       adminIdentity
     );
     const enrollment = await ca.enroll({
@@ -91,10 +91,10 @@ router.post("/registerDoctor", async (req, res) => {
   } = require("fabric-network");
   const path = require("path");
 
-  const ccpPath = path.resolve(__dirname,"..", "config", "connection-org1.json");
+  const ccpPath = path.resolve(__dirname,"..", "config", "connection-org2.json");
   try {
     // Create a new file system based wallet for managing identities.
-    const walletPath = path.join(process.cwd(), "wallet");
+    const walletPath = path.join(process.cwd(), "walletDoctor");
     const wallet = new FileSystemWallet(walletPath);
     console.log(`Wallet path: ${walletPath}`);
 
@@ -130,7 +130,7 @@ router.post("/registerDoctor", async (req, res) => {
 
     // Register the user, enroll the user, and import the new identity into the wallet.
     const secret = await ca.register(
-      { affiliation: "org1.department1", enrollmentID: userId, role: "doctor" },
+      { affiliation: "org2.department1", enrollmentID: userId, role: "doctor", attrs:[{name: 'role',value:'doctor', ecert: true}] },
       adminIdentity
     );
     const enrollment = await ca.enroll({
