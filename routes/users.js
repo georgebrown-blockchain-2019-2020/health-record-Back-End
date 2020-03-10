@@ -305,7 +305,7 @@ router.get("/getAccessList", async (req, res) => {
   }
 });
 router.get("/checkPermissionStatus", async (req, res) => {
-  const id = req.query.id;
+  const { id, patientID } = req.query;
   try {
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
@@ -339,7 +339,8 @@ router.get("/checkPermissionStatus", async (req, res) => {
     const contract = network.getContract("record");
 
     const result = await contract.evaluateTransaction(
-      "checkMyPermissionStatus"
+      "checkMyPermissionStatus",
+      patientID
     );
     console.log(`Transaction has been evaluated, result is: ${result}`);
     res.json({
@@ -354,7 +355,7 @@ router.get("/checkPermissionStatus", async (req, res) => {
   }
 });
 router.put("/addPermission", async (req, res) => {
-  const { id, permissionedID } = req.body;
+  const { id, permissionedID, role } = req.body;
   try {
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
@@ -389,7 +390,8 @@ router.put("/addPermission", async (req, res) => {
 
     const result = await contract.submitTransaction(
       "addPermission",
-      permissionedID
+      permissionedID,
+      role
     );
     console.log(`Transaction has been evaluated, result is: ${result}`);
     res.json({
