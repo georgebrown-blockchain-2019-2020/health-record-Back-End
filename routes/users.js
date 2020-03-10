@@ -189,7 +189,7 @@ router.get("/getDoctorList", async (req, res) => {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
 
     const result = await contract.evaluateTransaction("getDoctorList");
     console.log(
@@ -238,7 +238,7 @@ router.get("/getAllowedList", async (req, res) => {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
 
     const result = await contract.evaluateTransaction("getAllowedList");
     console.log(
@@ -287,7 +287,7 @@ router.get("/getAccessList", async (req, res) => {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
 
     const result = await contract.evaluateTransaction("getAccessList");
     console.log(
@@ -336,7 +336,7 @@ router.get("/checkPermissionStatus", async (req, res) => {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
 
     const result = await contract.evaluateTransaction(
       "checkMyPermissionStatus"
@@ -385,7 +385,7 @@ router.delete("/deletePermission", async (req, res) => {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
 
     const result = await contract.submitTransaction(
       "deletePermission",

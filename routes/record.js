@@ -50,7 +50,7 @@ router.post("/createdoctor", async function(req, res, next) {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
 
     // Evaluate the specified transaction.
     // queryCar transaction - requires 1 argument, ex: ('queryCar', 'CAR4')
@@ -111,7 +111,7 @@ router.post("/createpatient", async function(req, res, next) {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
 
     const result = await contract.submitTransaction("createPatientRecord");
     console.log(
@@ -169,7 +169,7 @@ router.put("/addmedicalinfo", async function(req, res, next) {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
     const result = await contract.submitTransaction(
       "writePatientRecord",
       patientID,
@@ -230,7 +230,7 @@ router.get("/getmedicalinfo", async function(req, res, next) {
     const network = await gateway.getNetwork("mychannel");
 
     // Get the contract from the network.
-    const contract = network.getContract("healthrecord");
+    const contract = network.getContract("record");
     let result;
     if (patientID) {
       result = await contract.evaluateTransaction(
