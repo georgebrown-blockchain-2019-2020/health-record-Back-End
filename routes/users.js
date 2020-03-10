@@ -345,7 +345,7 @@ router.get("/checkPermissionStatus", async (req, res) => {
     console.log(`Transaction has been evaluated, result is: ${result}`);
     res.json({
       status: "success",
-      isAccessed: result
+      isAccessed: result.toString()
     });
   } catch (error) {
     res.json({
