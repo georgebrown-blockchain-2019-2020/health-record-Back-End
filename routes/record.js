@@ -13,7 +13,7 @@ const walletPath = path.join(process.cwd(), "wallet");
 const wallet = new FileSystemWallet(walletPath);
 /* GET query listing. */
 router.post("/createdoctor", async function(req, res, next) {
-  const id = req.query.id;
+  const id = req.body.id;
   try {
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
@@ -66,7 +66,7 @@ router.post("/createdoctor", async function(req, res, next) {
   }
 });
 router.post("/createpatient", async function(req, res, next) {
-  const id = req.query.id;
+  const id = req.body.id;
   try {
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
