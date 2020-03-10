@@ -126,7 +126,7 @@ router.post("/registerDoctor", async (req, res) => {
       {
         affiliation: "org1.department1",
         enrollmentID: userId,
-        role: "doctor",
+        role: "client",
         attrs: [{ name: "role", value: "doctor", ecert: true }]
       },
       adminIdentity
