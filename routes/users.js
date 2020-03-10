@@ -353,6 +353,56 @@ router.get("/checkPermissionStatus", async (req, res) => {
     });
   }
 });
+router.put("/addPermission", async (req, res) => {
+  const { id, permissionedID } = req.body;
+  try {
+    // Create a new file system based wallet for managing identities.
+    console.log(process.cwd());
+
+    console.log(`Wallet path: ${walletPath}`);
+
+    // Check to see if we've already enrolled the user.
+    const userExists = await wallet.exists(id);
+    if (!userExists) {
+      console.log(`An identity for the user  does not exist in the wallet`);
+      console.log("Run the registerUser.js application before retrying");
+      res.json({
+        result: "failed",
+        message: `An identity for the user ${id} does not exist in the wallet`
+      });
+      return;
+    }
+    // Create a new gateway for connecting to our peer node.
+    const gateway = new Gateway();
+    // use the identity of user1 from wallet to connect
+    await gateway.connect(ccpPath, {
+      wallet,
+      identity: id,
+      discovery: { enabled: true, asLocalhost: true }
+    });
+
+    // Get the network (channel) our contract is deployed to.
+    const network = await gateway.getNetwork("mychannel");
+
+    // Get the contract from the network.
+    const contract = network.getContract("record");
+
+    const result = await contract.submitTransaction(
+      "addPermission",
+      permissionedID
+    );
+    console.log(`Transaction has been evaluated, result is: ${result}`);
+    res.json({
+      status: "success",
+      message: `Added user ${permissionedID} successfully`
+    });
+  } catch (error) {
+    res.json({
+      status: "failed",
+      message: `Failed to submit transaction: ${error}`
+    });
+  }
+});
 router.delete("/deletePermission", async (req, res) => {
   const { id, permissionedID } = req.body;
   try {

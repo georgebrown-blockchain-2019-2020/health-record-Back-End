@@ -130,7 +130,7 @@ router.post("/createpatient", async function(req, res, next) {
   }
 });
 router.put("/addmedicalinfo", async function(req, res, next) {
-  const { id, patientID, info } = res.body;
+  const { id, patientID, info } = req.body;
   try {
     const ccpPath = path.resolve(
       __dirname,
@@ -191,7 +191,7 @@ router.put("/addmedicalinfo", async function(req, res, next) {
   }
 });
 router.get("/getmedicalinfo", async function(req, res, next) {
-  const { id, patientID } = res.query;
+  const { id, patientID } = req.query;
   try {
     const ccpPath = path.resolve(
       __dirname,
