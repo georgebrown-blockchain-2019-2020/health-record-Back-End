@@ -8,13 +8,19 @@ var express = require("express");
 var router = express.Router();
 const { Gateway, FileSystemWallet } = require("fabric-network");
 const path = require("path");
-const ccpPath = path.resolve(__dirname, "..", "config", "connection-org1.json");
-const walletPath = path.join(process.cwd(), "wallet");
-const wallet = new FileSystemWallet(walletPath);
+
 /* GET query listing. */
 router.post("/createdoctor", async function(req, res, next) {
   const id = req.body.id;
   try {
+    const ccpPath = path.resolve(
+      __dirname,
+      "..",
+      "config",
+      "connection-org1.json"
+    );
+    const walletPath = path.join(process.cwd(), "wallet");
+    const wallet = new FileSystemWallet(walletPath);
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
 
@@ -68,6 +74,14 @@ router.post("/createdoctor", async function(req, res, next) {
 router.post("/createpatient", async function(req, res, next) {
   const id = req.body.id;
   try {
+    const ccpPath = path.resolve(
+      __dirname,
+      "..",
+      "config",
+      "connection-org1.json"
+    );
+    const walletPath = path.join(process.cwd(), "wallet");
+    const wallet = new FileSystemWallet(walletPath);
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
 
@@ -118,6 +132,14 @@ router.post("/createpatient", async function(req, res, next) {
 router.put("/addmedicalinfo", async function(req, res, next) {
   const { id, patientID, info } = res.body;
   try {
+    const ccpPath = path.resolve(
+      __dirname,
+      "..",
+      "config",
+      "connection-org1.json"
+    );
+    const walletPath = path.join(process.cwd(), "wallet");
+    const wallet = new FileSystemWallet(walletPath);
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
 
@@ -171,6 +193,14 @@ router.put("/addmedicalinfo", async function(req, res, next) {
 router.get("/getmedicalinfo", async function(req, res, next) {
   const { id, patientID } = res.query;
   try {
+    const ccpPath = path.resolve(
+      __dirname,
+      "..",
+      "config",
+      "connection-org1.json"
+    );
+    const walletPath = path.join(process.cwd(), "wallet");
+    const wallet = new FileSystemWallet(walletPath);
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
 
