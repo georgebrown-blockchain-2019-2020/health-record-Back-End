@@ -1,7 +1,6 @@
 var express = require("express");
 var router = express.Router();
-const walletPath = path.join(process.cwd(), "wallet");
-const wallet = new FileSystemWallet(walletPath);
+
 const {
   FileSystemWallet,
   Gateway,
@@ -10,6 +9,8 @@ const {
 const path = require("path");
 
 const ccpPath = path.resolve(__dirname, "..", "config", "connection-org1.json");
+const walletPath = path.join(process.cwd(), "wallet");
+const wallet = new FileSystemWallet(walletPath);
 /* GET users listing. */
 router.get("/", function(req, res, next) {
   res.send("respond with a resource");
