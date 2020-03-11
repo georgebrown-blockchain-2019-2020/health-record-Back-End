@@ -359,7 +359,7 @@ router.put("/addPermission", async (req, res) => {
   try {
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
-
+	console.log(id+" "+permissionedID+" "+role);
     console.log(`Wallet path: ${walletPath}`);
 
     // Check to see if we've already enrolled the user.
@@ -406,7 +406,7 @@ router.put("/addPermission", async (req, res) => {
   }
 });
 router.delete("/deletePermission", async (req, res) => {
-  const { id, permissionedID } = req.body;
+  const { id, permissionedID } = req.query;
   try {
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
