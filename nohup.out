@@ -1,0 +1,396 @@
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m588.192 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:51:25.794Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_51_25_809Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m558.915 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [32m200 [0m152.271 ms - 134[0m
+[0mGET /favicon.ico [33m404 [0m216.491 ms - 1212[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [36m304 [0m157.799 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [36m304 [0m150.861 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [36m304 [0m124.245 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [36m304 [0m120.107 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:52:12.449Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_52_12_463Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:52:53.141Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_52_53_159Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m583.139 ms - 372[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m170.413 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m240.144 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:54:38.064Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_54_38_076Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m553.201 ms - 372[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:54:46.104Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_54_46_117Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m578.440 ms - 372[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:54:56.221Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_54_56_234Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:55:21.945Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_55_21_961Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m569.797 ms - 372[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m134.161 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T00:55:31.412Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T00_55_31_426Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+[0mGET /users/getAllowedList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [0m- [0m- ms - -[0m
+2020-03-12T01:00:56.541Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m142.535 ms - 372[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"jOgPeMzXtxVGix4hud1EjyCSb2Z2","role":"client"},{"id":"Dolp3PBLfYeJRoX0561US05jmz63","role":"client"}]
+[0mGET /users/getAllowedList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m127.302 ms - 137[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T01:01:03.082Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T01_01_03_094Z-debug.log
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [32m200 [0m573.209 ms - 134[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:33","information":"exhausted and need time to take a rest","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=jOgPeMzXtxVGix4hud1EjyCSb2Z2 [36m304 [0m164.401 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m139.419 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"jOgPeMzXtxVGix4hud1EjyCSb2Z2","role":"client"},{"id":"Dolp3PBLfYeJRoX0561US05jmz63","role":"client"}]
+[0mGET /users/getAllowedList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m230.645 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3","role":"doctor"},{"id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1","role":"doctor"}]
+[0mGET /users/getAccessList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m180.461 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m135.661 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"jOgPeMzXtxVGix4hud1EjyCSb2Z2","role":"client"},{"id":"Dolp3PBLfYeJRoX0561US05jmz63","role":"client"}]
+[0mGET /users/getAllowedList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [36m304 [0m124.986 ms - -[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:33","information":"exhausted and need time to take a rest","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=jOgPeMzXtxVGix4hud1EjyCSb2Z2 [36m304 [0m141.088 ms - -[0m
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+
+> javascript@0.0.0 start /home/leo_atdinh/health-record-Back-End
+> node ./bin/www
+
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m582.423 ms - 372[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"jOgPeMzXtxVGix4hud1EjyCSb2Z2","role":"client"},{"id":"Dolp3PBLfYeJRoX0561US05jmz63","role":"client"}]
+[0mGET /users/getAllowedList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m139.329 ms - 137[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [32m200 [0m159.819 ms - 134[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3","role":"doctor"},{"id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1","role":"doctor"}]
+[0mGET /users/getAccessList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m145.253 ms - 137[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 08:34","information":"have a bit fever and cough","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 08:49","information":"Headache and runny nose","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"},{"date":"2020/03/11 AM 09:57","information":"cough and sore throat","writer_id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1"}]
+[0mGET /record/getmedicalinfo?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m138.395 ms - 372[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3","role":"doctor"},{"id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1","role":"doctor"}]
+[0mGET /users/getAccessList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m230.563 ms - 137[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"jOgPeMzXtxVGix4hud1EjyCSb2Z2","role":"client"},{"id":"Dolp3PBLfYeJRoX0561US05jmz63","role":"client"}]
+[0mGET /users/getAllowedList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m142.413 ms - 137[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [32m200 [0m141.245 ms - 134[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:33","information":"exhausted and need time to take a rest","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=jOgPeMzXtxVGix4hud1EjyCSb2Z2 [32m200 [0m134.207 ms - 158[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [32m200 [0m123.177 ms - 134[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3","role":"doctor"},{"id":"7RDJjNCArHhtUpIgKUlw5mhvJZw1","role":"doctor"}]
+[0mGET /users/getAccessList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m120.769 ms - 137[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"id":"jOgPeMzXtxVGix4hud1EjyCSb2Z2","role":"client"},{"id":"Dolp3PBLfYeJRoX0561US05jmz63","role":"client"}]
+[0mGET /users/getAllowedList?id=sen4wLzlk4Q2TAvQVWPXh8PPkA92 [32m200 [0m112.363 ms - 137[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+Transaction has been evaluated, result is: [{"date":"2020/03/11 AM 09:59","information":"mental problem","writer_id":"WrRdF88BoSNVZFswlh8Y3VqgN7F3"}]
+[0mGET /record/getmedicalinfo?id=Dolp3PBLfYeJRoX0561US05jmz63 [32m200 [0m127.246 ms - 134[0m
+/home/leo_atdinh/health-record-Back-End
+Wallet path: /home/leo_atdinh/health-record-Back-End/wallet
+2020-03-12T01:35:33.675Z - [33mwarn[39m: [Query]: evaluate: Query ID "[object Object]" of peer "peer1.org1.example.com:8051" failed: message=cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory, stack=Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+    at self._endorserClient.processProposal (/home/leo_atdinh/health-record-Back-End/node_modules/fabric-client/lib/Peer.js:144:36)
+    at Object.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:1207:9)
+    at InterceptingListener._callNext (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:568:42)
+    at InterceptingListener.onReceiveStatus (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:618:8)
+    at callback (/home/leo_atdinh/health-record-Back-End/node_modules/grpc/src/client_interceptors.js:845:24), status=500, , url=grpcs://localhost:8051, name=peer1.org1.example.com:8051, grpc.max_receive_message_length=-1, grpc.max_send_message_length=-1, grpc.keepalive_time_ms=120000, grpc.http2.min_time_between_pings_ms=120000, grpc.keepalive_timeout_ms=20000, grpc.http2.max_pings_without_data=0, grpc.keepalive_permit_without_calls=1, name=peer1.org1.example.com:8051, grpc.ssl_target_name_override=peer1.org1.example.com, grpc.default_authority=peer1.org1.example.com, isProposalResponse=true
+Failed to evaluate transaction: Error: cannot retrieve package for chaincode record/0.1.2, error open /var/hyperledger/production/chaincodes/record.0.1.2: no such file or directory
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! javascript@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the javascript@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/leo_atdinh/.npm/_logs/2020-03-12T01_35_33_691Z-debug.log
