@@ -181,7 +181,7 @@ router.put("/addmedicalinfo", async function(req, res, next) {
     await gateway.disconnect();
     res.json({
       status: "success",
-      message: `create patient successful`
+      message: `Added record successfully`
     });
   } catch (error) {
     res.json({
