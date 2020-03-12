@@ -8,8 +8,8 @@ Health Record project uses Custodial Wallet
 
 ## API Endpoints
 
-All API need to have userID as a parameter order to idetify wallet.
-APIs are divided into two main groups : `\users` and `record`
+All APIs need to have userID as a parameter in order to idetify wallet.
+APIs are divided into two main groups : `\users` and `\record`
 
 ### `\users` APIs
 
