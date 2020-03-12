@@ -253,7 +253,6 @@ router.get("/getmedicalinfo", async function(req, res, next) {
       result: "failed",
       message: `Failed to evaluate transaction: ${error}`
     });
-    process.exit(1);
   }
 });
 

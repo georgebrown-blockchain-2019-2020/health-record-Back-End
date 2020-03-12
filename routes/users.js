@@ -86,7 +86,6 @@ router.post("/registerClient", async (req, res) => {
       result: "failed",
       message: `Failed to register user ${userId}: ${error}`
     });
-    process.exit(1);
   }
 });
 router.post("/registerDoctor", async (req, res) => {
@@ -154,7 +153,6 @@ router.post("/registerDoctor", async (req, res) => {
       result: "failed",
       message: `Failed to register user ${userId}: ${error}`
     });
-    process.exit(1);
   }
 });
 router.get("/getDoctorList", async (req, res) => {
@@ -359,7 +357,7 @@ router.put("/addPermission", async (req, res) => {
   try {
     // Create a new file system based wallet for managing identities.
     console.log(process.cwd());
-	console.log(id+" "+permissionedID+" "+role);
+    console.log(id + " " + permissionedID + " " + role);
     console.log(`Wallet path: ${walletPath}`);
 
     // Check to see if we've already enrolled the user.
